@@ -1,0 +1,65 @@
+Pylint test:
+
+For python, the lint test has became pylint test mostly, and by using command line "sudo apt-get install pylint", we can install pylint and using this tool to check the
+code and module. Here are the results and the changes I made to the code.
+
+1. test 1: code grade: 1.32/10 (mostly intended style problems)
+
+2. test 2: mostly naming style problems
+customvmname ?2  ~/0inclass/EC601  % pylint test.py                                                         16:46:16
+************* Module test
+test.py:23:14: C0303: Trailing whitespace (trailing-whitespace)
+test.py:36:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
+test.py:61:0: C0305: Trailing newlines (trailing-newlines)
+test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test.py:13:0: C0103: Constant name "accessToken" doesn't conform to UPPER_CASE naming style (invalid-name)
+test.py:14:0: C0103: Constant name "accessTokenSecret" doesn't conform to UPPER_CASE naming style (invalid-name)
+test.py:15:0: C0103: Constant name "consumerKey" doesn't conform to UPPER_CASE naming style (invalid-name)
+test.py:16:0: C0103: Constant name "consumerSecret" doesn't conform to UPPER_CASE naming style (invalid-name)
+test.py:31:0: C0103: Function name "cleanTxt" doesn't conform to snake_case naming style (invalid-name)
+test.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:40:0: C0103: Function name "getSubjectivity" doesn't conform to snake_case naming style (invalid-name)
+test.py:40:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:42:0: C0103: Function name "getPolarity" doesn't conform to snake_case naming style (invalid-name)
+test.py:42:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:45:0: C0103: Function name "getAnalysis" doesn't conform to snake_case naming style (invalid-name)
+test.py:45:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:46:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+test.py:8:0: W0611: Unused numpy imported as np (unused-import)
+test.py:10:0: W0611: Unused matplotlib.pyplot imported as plt (unused-import)
+test.py:9:0: C0411: standard import "import re" should be placed before "import tweepy" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 4.74/10 (previous run: 1.32/10, +3.42)
+
+3. test 3: 
+customvmname ?28  ~/0inclass/EC601  % pylint test.py                                          17:04:54
+************* Module test
+test.py:22:14: C0303: Trailing whitespace (trailing-whitespace)
+test.py:34:15: C0303: Trailing whitespace (trailing-whitespace)
+test.py:56:0: C0304: Final newline missing (missing-final-newline)
+test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:38:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:40:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:46:4: R1705: Unnecessary "else" after "return" (no-else-return)
+test.py:9:0: W0611: Unused matplotlib.pyplot imported as plt (unused-import)
+
+
+------------------------------------------------------------------
+Your code has been rated at 6.84/10 (previous run: 4.74/10, +2.11)
+
+4. test4:
+customvmname ?28  ~/0inclass/EC601  % pylint test.py                                          17:12:51
+************* Module test
+test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:38:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:40:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.61/10 (previous run: 8.11/10, +0.50)
+
+
